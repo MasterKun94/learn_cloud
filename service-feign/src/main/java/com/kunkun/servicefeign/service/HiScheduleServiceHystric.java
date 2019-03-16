@@ -1,0 +1,11 @@
+package com.kunkun.servicefeign.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class HiScheduleServiceHystric implements HiScheduleService {
+    @Override
+    public String sayHiFromClientOne(String name) {
+        return "sorry "+name;
+    }
+}
